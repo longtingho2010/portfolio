@@ -91,6 +91,7 @@ section {
 
 .home-content {
   max-width: 60rem;
+  z-index: 99;
 }
 
 .home-content h1 {
@@ -245,6 +246,7 @@ section {
   background-size: contain;
   opacity: 0.7;
   background-position: center;
+  z-index: 98;
 }
 
 /************ ABOUT PAGE **************/
@@ -551,16 +553,17 @@ span {
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
 }
 
 .project-box {
   position: relative;
-  width: 35rem;
-  height: 35rem;
+  /* width: 35rem;
+  height: 35rem; */
   overflow: hidden;
   border-radius: 2rem;
+  margin: 20px;
 }
 
 .project-box img {
@@ -810,6 +813,10 @@ section:nth-child(odd) .animate.scroll {
   .footer {
     padding: 2rem 4%;
   }
+
+  .project {
+    padding: 2rem 4%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -874,6 +881,12 @@ section:nth-child(odd) .animate.scroll {
   .navbar a:hover,
   .navbar a.active {
     border-bottom: none;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
