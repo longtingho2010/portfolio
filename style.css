@@ -91,7 +91,7 @@ section {
 
 .home-content {
   max-width: 60rem;
-  z-index: 99;
+  z-index: 98;
 }
 
 .home-content h1 {
@@ -246,7 +246,7 @@ section {
   background-size: contain;
   opacity: 0.7;
   background-position: center;
-  z-index: 98;
+  z-index: 97;
 }
 
 /************ ABOUT PAGE **************/
@@ -527,7 +527,7 @@ span {
 }
 
 .skills-col:nth-child(1) .progress:nth-child(1) .bar span {
-  width: 90%;
+  width: 80%;
 }
 
 .skills-col:nth-child(1) .progress:nth-child(2) .bar span {
@@ -597,6 +597,12 @@ span {
 
 .project-content .title {
   font-size: 2.5rem;
+  text-align: center;
+}
+
+.project-content .des {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .project-content .btn {
@@ -838,7 +844,7 @@ section:nth-child(odd) .animate.scroll {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     transition-delay: 0.3s;
     transition: 0.3s ease-in-out;
-    z-index: 1;
+    z-index: 10000;
   }
 
   .navbar.active {
