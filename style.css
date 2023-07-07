@@ -849,7 +849,7 @@ section:nth-child(odd) .animate.scroll {
 
   .navbar.active {
     right: 0;
-    transition-delay: 0.1s;
+    /* transition-delay: 0.1s; */
   }
 
   .active-nav {
@@ -861,7 +861,6 @@ section:nth-child(odd) .animate.scroll {
     height: 100%;
     z-index: -1;
     transition: 0.3s ease-in-out;
-    transition-delay: 0s;
   }
 
   .navbar.active .active-nav {
