@@ -49,17 +49,17 @@ const msg = document.querySelector("#user-message");
 const userEmail = document.querySelector("#user-email");
 const userName = document.querySelector("#user-name");
 
-const sendEmail = (el) => {
-  el.preventDefault();
-  Email.send({
-    SecureToken: "467dc8a6-6136-4386-8bfe-7cb0a5647150",
-    To: "longtingho2010@gmail.com",
-    From: userEmail.value,
-    Subject: "Contact Form",
-    Body: msg.value,
-  }).then((message) => alert(message));
+// const sendEmail = (el) => {
+//   el.preventDefault();
+//   Email.send({
+//     SecureToken: "467dc8a6-6136-4386-8bfe-7cb0a5647150",
+//     To: "longtingho2010@gmail.com",
+//     From: userEmail.value,
+//     Subject: "Contact Form",
+//     Body: msg.value,
+//   }).then((message) => alert(message));
 
-  form.reset();
-};
+//   form.reset();
+// };
 
-form.addEventListener("submit", sendEmail);
+// form.addEventListener("submit", sendEmail);
